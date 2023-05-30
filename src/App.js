@@ -1,25 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import { RModalImages } from 'react-modal-images';
+import React from 'react';
+
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2>React modal images</h2>
+       <RModalImages
+        small={"https://dummyimage.com/400x200/914a91/fff"}
+        medium={"https://dummyimage.com/600x400/914a91/fff"}
+        large={"https://dummyimage.com/800x600/914a91/fff"}
+        alt={"react using react modal images"}
+      />
     </div>
   );
 }
-
 export default App;
